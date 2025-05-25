@@ -7,8 +7,7 @@ interface CourseProps {
     title: string;
     icon: React.ReactNode;
     description: string;
-    priceOriginal: string;
-    priceCurrent: string;
+    startingPrice: string;
     duration: string;
     features: string[];
     level: string;
@@ -77,11 +76,9 @@ const CourseCard: React.FC<CourseProps> = ({ course }) => {
         
         <div className={`rounded-lg ${colors.priceBg} p-4 mb-6 flex items-center justify-between`}>
           <div>
-            <span className="text-gray-400 text-sm line-through block">
-              {course.priceOriginal}
-            </span>
+            <span className="text-gray-400 text-sm block">Starting from</span>
             <span className="text-white text-2xl font-bold">
-              {course.priceCurrent}
+              {course.startingPrice}
             </span>
           </div>
           <div className="text-right">
@@ -103,7 +100,7 @@ const CourseCard: React.FC<CourseProps> = ({ course }) => {
         </div>
         
         <a 
-          href="https://docs.google.com/forms/d/e/1FAIpQLSctyMPTACMW109G3AU1FcOcg4vRYW1cEi-gCRHbg8zhO1zSSQ/viewform?usp=dialog" 
+          href="https://forms.google.com" 
           target="_blank" 
           rel="noopener noreferrer" 
           className={`block w-full text-center ${colors.button}`}

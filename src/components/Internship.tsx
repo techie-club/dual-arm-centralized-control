@@ -31,20 +31,18 @@ const Internship: React.FC = () => {
   const internshipOptions = [
     {
       title: "15-Day Internship",
-      originalPrice: "₹1000",
-      offerPrice: "₹500",
+      startingPrice: "₹500",
       duration: "15 days",
-      badge: "50% OFF",
+      badge: "Limited Time Offer",
       description: "Intensive short-term practical training for quick skill acquisition",
       isPopular: false,
       color: "purple"
     },
     {
       title: "3-Month Internship",
-      originalPrice: "₹5000",
-      offerPrice: "₹2500",
+      startingPrice: "₹2500",
       duration: "3 months",
-      badge: "50% OFF",
+      badge: "Most Popular",
       description: "Comprehensive training with in-depth project work and mentorship",
       isPopular: true,
       color: "blue"
@@ -112,11 +110,9 @@ const Internship: React.FC = () => {
               <div className={`rounded-lg ${priceBg} p-4 mb-6`}>
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-gray-400 text-sm line-through block">
-                      {option.originalPrice}
-                    </span>
+                    <span className="text-gray-400 text-sm block">Starting from</span>
                     <span className="text-white text-2xl font-bold">
-                      {option.offerPrice}
+                      {option.startingPrice}
                     </span>
                   </div>
                   <div className={`py-1 px-3 rounded-full text-xs font-bold ${badgeColor}`}>
@@ -129,7 +125,7 @@ const Internship: React.FC = () => {
               </div>
               
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSctyMPTACMW109G3AU1FcOcg4vRYW1cEi-gCRHbg8zhO1zSSQ/viewform?usp=dialog" 
+                href="https://forms.google.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`block w-full text-center ${buttonClass}`}

@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSctyMPTACMW109G3AU1FcOcg4vRYW1cEi-gCRHbg8zhO1zSSQ/viewform?usp=dialog" 
+                href="https://forms.google.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-neon-green text-center"

@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
               <NavLink href="#portfolio" onClick={closeMenu}>Portfolio</NavLink>
               <NavLink href="#contact" onClick={closeMenu}>Contact</NavLink>
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSctyMPTACMW109G3AU1FcOcg4vRYW1cEi-gCRHbg8zhO1zSSQ/viewform?usp=dialog" 
+                href="https://forms.google.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-neon-green"
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
             <NavLink href="#contact" mobile onClick={closeMenu}>Contact</NavLink>
             <div className="pt-4">
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSctyMPTACMW109G3AU1FcOcg4vRYW1cEi-gCRHbg8zhO1zSSQ/viewform?usp=dialog" 
+                href="https://forms.google.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block w-full text-center btn-neon-green"

@@ -5,10 +5,9 @@ const Membership: React.FC = () => {
   const membershipPlans = [
     {
       title: "Monthly Membership",
-      originalPrice: "₹1000",
-      offerPrice: "₹500",
+      startingPrice: "₹500",
       duration: "per month",
-      badge: "50% OFF",
+      badge: "Basic Plan",
       features: [
         "50% off on all courses (excluding internships)",
         "Weekly giveaways (discount vouchers)",
@@ -19,10 +18,9 @@ const Membership: React.FC = () => {
     },
     {
       title: "3-Month Membership",
-      originalPrice: "₹3000",
-      offerPrice: "₹1000",
+      startingPrice: "₹1000",
       duration: "for 3 months",
-      badge: "67% OFF",
+      badge: "Best Value",
       features: [
         "50% off on all courses (excluding internships)",
         "Weekly giveaways (Guvi course vouchers ₹500-₹1500)",
@@ -95,11 +93,9 @@ const Membership: React.FC = () => {
               <div className={`rounded-lg ${priceBg} p-4 mb-6`}>
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-gray-400 text-sm line-through block">
-                      {plan.originalPrice}
-                    </span>
+                    <span className="text-gray-400 text-sm block">Starting from</span>
                     <span className="text-white text-2xl font-bold">
-                      {plan.offerPrice}
+                      {plan.startingPrice}
                     </span>
                     <span className="text-gray-400 text-sm ml-1">
                       {plan.duration}
@@ -129,7 +125,7 @@ const Membership: React.FC = () => {
               </div>
               
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSctyMPTACMW109G3AU1FcOcg4vRYW1cEi-gCRHbg8zhO1zSSQ/viewform?usp=dialog" 
+                href="https://forms.google.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`block w-full text-center ${buttonClass}`}
@@ -163,7 +159,7 @@ const Membership: React.FC = () => {
           Be part of an exclusive network of cybersecurity enthusiasts, share knowledge, and accelerate your learning journey.
         </p>
         <a 
-          href="https://docs.google.com/forms/d/e/1FAIpQLSctyMPTACMW109G3AU1FcOcg4vRYW1cEi-gCRHbg8zhO1zSSQ/viewform?usp=dialog" 
+          href="https://forms.google.com" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-neon-purple"
