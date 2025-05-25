@@ -9,8 +9,7 @@ const Courses: React.FC = () => {
       title: "Cyber Basics Starter Pack",
       icon: <Cpu className="h-12 w-12 text-green-500" />,
       description: "Perfect for absolute beginners to build a strong foundation in computer fundamentals, operating systems, and networking.",
-      priceOriginal: "₹1000",
-      priceCurrent: "₹200",
+      startingPrice: "₹200",
       duration: "Self-paced",
       features: [
         "Computer Fundamentals",
@@ -26,8 +25,7 @@ const Courses: React.FC = () => {
       title: "Zero to Hero in Ethical Hacking",
       icon: <Lock className="h-12 w-12 text-blue-500" />,
       description: "Comprehensive ethical hacking course taking you from beginner to advanced levels with hands-on practical exercises.",
-      priceOriginal: "₹3000",
-      priceCurrent: "₹1000",
+      startingPrice: "₹1000",
       duration: "12 weeks",
       features: [
         "Footprinting & Reconnaissance",
