@@ -129,7 +129,7 @@ const Membership: React.FC = () => {
               </div>
               
               <a 
-                href="https://forms.google.com" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSctyMPTACMW109G3AU1FcOcg4vRYW1cEi-gCRHbg8zhO1zSSQ/viewform?usp=dialog" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`block w-full text-center ${buttonClass}`}
@@ -163,7 +163,7 @@ const Membership: React.FC = () => {
           Be part of an exclusive network of cybersecurity enthusiasts, share knowledge, and accelerate your learning journey.
         </p>
         <a 
-          href="https://forms.google.com" 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSctyMPTACMW109G3AU1FcOcg4vRYW1cEi-gCRHbg8zhO1zSSQ/viewform?usp=dialog" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-neon-purple"
