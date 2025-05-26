@@ -179,7 +179,7 @@ const Portfolio: React.FC = () => {
       
       <div className="text-center mt-12">
         <a 
-          href="https://forms.google.com" 
+          href="https://forms.gle/MbbUszbygFy9aHdz5" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-neon-green inline-block"

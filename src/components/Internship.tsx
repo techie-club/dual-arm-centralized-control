@@ -125,7 +125,7 @@ const Internship: React.FC = () => {
               </div>
               
               <a 
-                href="https://forms.google.com" 
+                href="https://forms.gle/MbbUszbygFy9aHdz5" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`block w-full text-center ${buttonClass}`}
@@ -159,7 +159,7 @@ const Internship: React.FC = () => {
           Our internship slots fill up quickly. Secure your spot today!
         </p>
         <a 
-          href="https://forms.google.com" 
+          href="https://forms.gle/MbbUszbygFy9aHdz5" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-neon-green"
