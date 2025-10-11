@@ -1,5 +1,5 @@
 function cdiseq = Cerchio(X, ~, ~, data, ~)
-    % Vincolo non lineare per modellare la presenza dell'ostacolo: 
+    % Non-linear inequality constraint to avoid circular obstacle
     % -(a1 * cos(q1) + a2 * cos(q1 + q2) - cx)^2
     % -(a1 * sin(q1) + a2 * sin(q1 + q2) - cy)^2 <= -rc^2
     

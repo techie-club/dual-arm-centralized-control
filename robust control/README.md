@@ -26,4 +26,3 @@ Notes
 
 - The Simulink `slprj/` folder may be generated when running the model. You can safely delete it to clean up build artifacts.
 - The plotting script uses LaTeX interpreters for labels; if fonts or interpreters cause warnings, try switching label interpreters or adjusting font settings.
-- If you want, I can translate other README files in the repository or generate a quickstart document that walks through parameter tuning and expected outputs for this example.

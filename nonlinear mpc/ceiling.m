@@ -1,5 +1,5 @@
 function cdiseq = Soffitto(X, ~, ~, data, ~)
-    % Vincolo non lineare per modellare la presenza dell'ostacolo: 
+    % Non-linear inequality constraint function to avoid the ceiling
     % a1 * cos(q1) + a2 * cos(q1 + q2) <= lc
 
     global lc; a1 = 1; a2 = 1;

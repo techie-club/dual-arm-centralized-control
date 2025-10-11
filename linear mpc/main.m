@@ -86,4 +86,4 @@ end
 
 %% RISULTATI
 
-traccia_figure
+trace_figures

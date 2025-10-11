@@ -71,9 +71,9 @@ pi_t = [tempo; I*pi1; I*pi2; I*pi3; I*pi4; I*pi5; I*pi6; I*pi7; I*pi8]';
 %% SIMULAZIONE
 
 tic;
-sim('controllo_adattativo.slx')
+sim('adaptive_control.slx')
 tf = toc;
 
 %% RISULTATI
 
-traccia_figure
+trace_figures
