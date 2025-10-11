@@ -38,4 +38,4 @@ BUsym = jacobian(f, Usym);
 A_fun = matlabFunction(Asym, 'Vars', {Xsym, Usym});
 Bu_fun = matlabFunction(BUsym, 'Vars', {Xsym, Usym});
 
-save('Jacobiano.mat', 'A_fun', 'Bu_fun');
+save('Jacobian.mat', 'A_fun', 'Bu_fun');

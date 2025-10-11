@@ -43,7 +43,7 @@ r = [pi/2 pi/2 0 0]'...
 
 %% GENERAZIONE DELLO JACOBIANO DELLO STATO
 
-generaJacobiano
+generateJacobian
 
 %% CREAZIONE DEL CONTROLLORE
 

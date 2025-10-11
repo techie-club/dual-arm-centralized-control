@@ -1,7 +1,5 @@
 function y = PassivityOutput(x, ~)
-
-    % utilizzate per calcolare il vincolo di passività
+    % used to calculate the passivity constraint
     qdref = [0 0]';
     y = x(3:4) - qdref;
-
 end

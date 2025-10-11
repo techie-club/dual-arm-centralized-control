@@ -42,7 +42,7 @@ r = [q; qd];               % riferimenti
 
 %% GENERAZIONE DELLO JACOBIANO DELLO STATO
 
-generaJacobiano
+generateJacobian
 
 %% LINEARIZZAZIONE DEL SISTEMA
 

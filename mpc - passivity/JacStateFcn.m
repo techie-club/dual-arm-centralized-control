@@ -1,5 +1,6 @@
 function [A, Bu] = JacStateFcn(x, u)
-    % funzione per caricare e modellare gli jacobiani degli stati
+    % function to compute the Jacobian of the state function
+    % with respect to states and inputs
     persistent A_fun Bu_fun
 
     if isempty(A_fun)

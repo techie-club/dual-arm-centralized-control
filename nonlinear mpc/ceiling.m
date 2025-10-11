@@ -1,4 +1,4 @@
-function cdiseq = Soffitto(X, ~, ~, data, ~)
+function cdiseq = ceiling(X, ~, ~, data, ~)
     % Non-linear inequality constraint function to avoid the ceiling
     % a1 * cos(q1) + a2 * cos(q1 + q2) <= lc
 
