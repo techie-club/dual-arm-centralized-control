@@ -1,0 +1,79 @@
+clear all
+close all
+clc
+
+%% DATI DEL MANIPOLATORE
+
+a1 = 1; a2 = 1;            % lunghezza del braccio [m]
+l1 = 0.5; l2 = 0.5;        % distanza dal centro di massa [m]
+ml1 = 50; ml2 = 50;        % massa del braccio [kg]
+Il1 = 10; Il2 = 10;        % momento d'inerzia del braccio [kg m^2]
+kr1 = 100; kr2 = 100;      % rapporto di riduzione del motore
+mm1 = 5; mm2 = 5;          % massa del motore [kg]
+Im1 = 0.01; Im2 = 0.01;    % momento d'inerzia del rotore [kg m^2]
+g = 9.81;                  % accelerazione di gravità [m/s^2]
+n = 2;                     % numero di giunti
+qi = [0; pi/4];            % valori iniziali delle varibili di giunto [rad]
+qf = [pi/2; pi/2];         % valori finali delle varibili di giunto [rad]
+
+%% DATI DELLA SIMULAZIONE
+Tc = 0.005;                % tempo di campionamento [s]
+Tf = 5;                    % durata della simulazione [s]
+tempo = 0 : Tc : Tf;       % vettore dei tempi [s]
+nc = length(tempo);        % numero di campioni
+
+%% GENERAZIONE DELLA TRAIETTORIA
+
+% traiettoria con profilo di velocità trapezoidale
+wpts1 = [0 pi/2]; wpts2 = [pi/4 pi/2]; 
+[q1ref, qd1ref, qdd1ref, ~] = trapveltraj(wpts1, nc, EndTime=Tf);
+[q2ref, qd2ref, qdd2ref, ~] = trapveltraj(wpts2, nc, EndTime=Tf);
+
+% % traiettoria polinomiale del terzo ordine
+% tpts = [0 Tf];
+% [q1ref, qd1ref, qdd1ref, ~] = cubicpolytraj(wpts1, tpts, tempo);
+% [q2ref, qd2ref, qdd2ref, ~] = cubicpolytraj(wpts2, tpts, tempo);
+
+qref = [tempo; q1ref; q2ref]';       % posizione
+qdref = [tempo; qd1ref; qd2ref]';    % velocità
+qddref = [tempo; qdd1ref; qdd2ref]'; % accelerazione
+
+%% MODELLAZIONE DELLA LOGICA DI CONTROLLO
+
+lambda = 5 * eye(n);
+Kd = 750 * eye(n);
+Kpi = 0.01 * eye(8);
+
+% vettore dei parametri iniziale, prima della variazione
+pi1 = ml1 + mm2;
+pi2 = ml1 * (l1 - a1);
+pi3 = Il1 + ml1 * (l1 - a1)^2 + Im2;
+pi4 = Im1;
+pi5 = ml2;
+pi6 = ml2 * (l2 - a2);
+pi7 = Il2 + ml2 * (l2 - a2)^2;
+pi8 = Im2;
+pi = [pi1 pi2 pi3 pi4 pi5 pi6 pi7 pi8]';
+
+% vettore dei parametri finale, dopo la variazione
+delta_m2 = 10;
+delta_m2lc2 = 11;
+delta_I2hat = 12.12;
+
+pi5 = pi5 - delta_m2;
+pi6 = pi6 - delta_m2lc2;
+pi7 = pi7 - delta_I2hat;
+
+% vettore dei parametri finale, dopo la variazione, con tempi
+I = ones(1, length(tempo));
+pi_t = [tempo; I*pi1; I*pi2; I*pi3; I*pi4; I*pi5; I*pi6; I*pi7; I*pi8]';
+
+%% SIMULAZIONE
+
+tic;
+sim('controllo_adattativo.slx')
+tf = toc;
+
+%% RISULTATI
+
+traccia_figure
