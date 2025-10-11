@@ -1,4 +1,4 @@
 function y = OutputFcn(x, ~)  
-    % funzione per modellare le uscite del sistema
+    % function that defines the system outputs
     y = x;
 end
