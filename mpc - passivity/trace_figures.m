@@ -97,7 +97,7 @@ legend_text = {'Obstacle', 'End-effector', 'Reference'};
 
 switch ostacolo
 
-    case {'soffitto'}
+    case {'ceiling'}
         h_x = a1 * sin(q1_t) + a2 * sin(q1_t + q2_t);
         vincolo = lc * ones(length(tempo));
         figure(7); clf; h1 = plot(x, lc * ones(nc, 1), '--'); hold on;
@@ -108,7 +108,7 @@ switch ostacolo
         ylabel('y [m]', 'fontsize', fsl, 'FontName', font);
         legend([h1, h2, h3], legend_text, 'Location', 'best');
 
-    case {'cerchio'}
+    case {'circle'}
         h_x = -(a1 * cos(q1_t) + a2 * cos(q1_t + q2_t) - cx).^2 - ...
              (a1 * sin(q1_t) + a2 * sin(q1_t + q2_t) - cy).^2;
         vincolo = -rc^2 * ones(length(tempo));
