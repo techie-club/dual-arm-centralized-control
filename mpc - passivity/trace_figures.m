@@ -95,7 +95,7 @@ xref = a1 * cos(qd1_t) + a2 * cos(qd1_t + qd2_t);
 yref = a1 * sin(qd1_t) + a2 * sin(qd1_t + qd2_t);
 legend_text = {'Obstacle', 'End-effector', 'Reference'};
 
-switch ostacolo
+switch obstacle
 
     case {'ceiling'}
         h_x = a1 * sin(q1_t) + a2 * sin(q1_t + q2_t);
