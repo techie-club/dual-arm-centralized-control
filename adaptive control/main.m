@@ -24,15 +24,16 @@ nc = length(tempo);        % number of samples
 
 %% TRAJECTORY GENERATION
 
-% trajectory with trapezoidal velocity profile
 wpts1 = [0 pi/2]; wpts2 = [pi/4 pi/2]; 
-[q1ref, qd1ref, qdd1ref, ~] = trapveltraj(wpts1, nc, EndTime=Tf);
-[q2ref, qd2ref, qdd2ref, ~] = trapveltraj(wpts2, nc, EndTime=Tf);
 
-% % third-order polynomial trajectory
-% tpts = [0 Tf];
-% [q1ref, qd1ref, qdd1ref, ~] = cubicpolytraj(wpts1, tpts, tempo);
-% [q2ref, qd2ref, qdd2ref, ~] = cubicpolytraj(wpts2, tpts, tempo);
+% trajectory with trapezoidal velocity profile
+% [q1ref, qd1ref, qdd1ref, ~] = trapveltraj(wpts1, nc, EndTime=Tf);
+% [q2ref, qd2ref, qdd2ref, ~] = trapveltraj(wpts2, nc, EndTime=Tf);
+
+% third-order polynomial trajectory
+tpts = [0 Tf];
+[q1ref, qd1ref, qdd1ref, ~] = cubicpolytraj(wpts1, tpts, tempo);
+[q2ref, qd2ref, qdd2ref, ~] = cubicpolytraj(wpts2, tpts, tempo);
 
 qref = [tempo; q1ref; q2ref]';       % position
 qdref = [tempo; qd1ref; qd2ref]';    % velocity

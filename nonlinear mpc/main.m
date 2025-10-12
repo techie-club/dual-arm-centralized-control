@@ -21,7 +21,7 @@ global lc; lc = 1.8;
 % circle radius and center coordinates [m]
 global cx; global cy; global rc; rc = 1; cx = 2; cy = 2;
 
-obstacle = 'ceiling';
+obstacle = 'circle';
 % 'ceiling' or 'circle'
 
 %% CONTROLLER DATA

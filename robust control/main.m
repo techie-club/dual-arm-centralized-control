@@ -35,7 +35,7 @@ qddref = [tempo; qdd1ref; qdd2ref]'; % acceleration
 
 %% CONTROL LOGIC MODELING
 
-ro = 70;
+ro = 0.1;
 eps = 0.004;
 
 H = zeros(2 * n, 2 * n);
