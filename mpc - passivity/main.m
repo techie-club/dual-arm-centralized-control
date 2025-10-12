@@ -21,7 +21,7 @@ global lc; lc = 1.8;
 % circle radius and center coordinates [m]
 global cx; global cy; global rc; rc = 1; cx = 2; cy = 2;
 
-ostacolo = 'ceiling';
+obstacle = 'ceiling';
 % ceiling or circle
 
 %% CONTROLLER SETTINGS
@@ -63,21 +63,21 @@ mpcobj.Passivity.InputFcn = "PassivityInput"; mpcobj.Passivity.OutputFcn = "Pass
 validateFcns(mpcobj, rand(nx, 1), rand(nu, 1))
 
 % WEIGHTS:
-switch ostacolo
-    case {'soffitto'}
+switch obstacle
+    case {'ceiling'}
         mpcobj.Weights.OutputVariables = [5 5 0 0];
-    case {'cerchio'}
+    case {'circle'}
         mpcobj.Weights.OutputVariables = [5 5 0 0];
 end
 mpcobj.Weights.ManipulatedVariablesRate = [0 0];
 mpcobj.Weights.ManipulatedVariables = [0 0];
 
 % CONSTRAINTS:
-switch ostacolo
-    case {'soffitto'}
-        mpcobj.Optimization.CustomIneqConFcn = 'Soffitto';
-    case {'cerchio'}
-        mpcobj.Optimization.CustomIneqConFcn = 'Cerchio';
+switch obstacle
+    case {'ceiling'}
+        mpcobj.Optimization.CustomIneqConFcn = 'ceiling';
+    case {'circle'}
+        mpcobj.Optimization.CustomIneqConFcn = 'circle';
 end
 for i = 1 : nu
     % actuator saturation
