@@ -27,5 +27,7 @@ main
 ## Requirements
 - MATLAB (R2019b or later recommended)
 - Simulink (required for examples that use a Simulink model)
-- Symbolic Math Toolbox (needed if you run `generateJacobian`)
+- Symbolic Math Toolbox
+- Robotics System Toolbox
+- Control System Toolbox
 - Model Predictive Control Toolbox (required by MPC examples)
