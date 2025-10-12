@@ -33,7 +33,7 @@ nc = length(tempo);        % number of samples
 wpts1 = [0 pi/2]; wpts2 = [pi/4 pi/2];
 
 [q1, qd1, qdd1, ~] = trapveltraj(wpts1, nc, EndTime=Tf);
-[q2, qd2, qdd2, ~] = trapveltraj(wpts2, nc, EndTime=Tf];
+[q2, qd2, qdd2, ~] = trapveltraj(wpts2, nc, EndTime=Tf);
 
 q = [q1; q2];              % position
 qd = [qd1; qd2];           % velocity

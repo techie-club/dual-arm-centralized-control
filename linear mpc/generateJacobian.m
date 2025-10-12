@@ -27,7 +27,7 @@ G = [g1;
      g2];
 
 % System equations
-teta_dd = B \\ (-C * [teta1d; teta2d] - G + Usym);
+teta_dd = B \ (-C * [teta1d; teta2d] - G + Usym);
 f = [teta1d; teta2d; teta_dd];
 
 % Partial derivatives

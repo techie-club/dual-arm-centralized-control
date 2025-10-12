@@ -36,7 +36,7 @@ function xd = StateFcn(x, u)
     qd = [teta1d; teta2d];
 
     % DYNAMIC EQUATION
-    qdd = B \\ (u -G -C * qd);
+    qdd = B \ (u -G -C * qd);
 
     % STATE-SPACE FORM
     xd = [qd; qdd];
