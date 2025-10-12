@@ -11,6 +11,7 @@ This repository contains example controllers and reference implementations for a
 
 ## Other files
 - `inertial_matrix.m` — Script to compute the manipulator inertia matrix.
+- [Relation](https://github.com/simo1101/dual-arm-centralized-control/blob/main/relation.pdf) - Detailed description of the proposed methods. 
 
 ## Quick start
 1. Open MATLAB and set the repository root as the current folder or add it to the MATLAB path.
